@@ -8,9 +8,28 @@ function getComputerChoice() {
 }
 
 if (getComputerChoice() === 0) {
-   console.log("Rock");
+   console.log("Computer: Rock");
 } else if (getComputerChoice() === 1) {
-   console.log("Paper");
+   console.log("Computer: Paper");
 } else {
-   console.log("Scissors");
+   console.log("Computer: Scissors");
+}
+
+// When prompted to input a string
+// The user will input "rock, "paper," or "scissors"
+// Equate each input option to a console value
+// Return the user's value in the console
+
+let text = prompt("Choose rock, paper, or scissors!");
+
+function getHumanChoice() {
+   return text.toLowerCase();
+}
+
+if (getHumanChoice() === "rock") {
+   console.log("You: Rock");
+} else if (getHumanChoice() === "paper") {
+   console.log("You: Paper");
+} else if (getHumanChoice() === "scissors") {
+   console.log("You: Scissors");
 }
